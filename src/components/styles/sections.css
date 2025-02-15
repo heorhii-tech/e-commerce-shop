@@ -1,0 +1,60 @@
+.intro{
+    @apply w-full min-h-screen bg-[#F2F0F1];
+    @apply flex lg:min-h-[100%] ;
+}
+.intro-wrapper{
+    @apply mt-[40px] flex flex-col items-center gap-[20px];
+    @apply max-w-[430px] sm:max-w-[768px] md:mt-[100px] lg:flex-row lg:mt-[50px];
+ }
+.intro__info{
+    @apply flex flex-col items-center gap-[20px];
+    @apply sm:gap-[40px] sm:items-start
+}
+.intro__title{
+    @apply text-[36px] leading-[46px] font-black leading-[34px];
+    @apply sm:text-[40px] sm:leading-[42px] md:max-w-[550px];
+}
+.intro__subtitle{
+    @apply text-[000000] opacity-[60%] text-[14px] font-[400] leading-[20px];
+    @apply sm:max-w-[450px]
+}
+.intro__button{
+    @apply w-full sm:w-[250px] ;
+}
+.intro__content{
+    @apply flex flex-col gap-[20px];
+    @apply sm:gap-[40px] md:w-full md:gap-[60px]
+}
+.intro__stats{
+    @apply flex flex-wrap items-center justify-center gap-[20px];
+    @apply sm:justify-between;
+}
+
+.intro__stat-digit{
+    @apply text-[24px] font-bold;
+    
+}
+.intro__stat-subtitle{
+    @apply text-[000000] opacity-[60%] text-[12px] font-[400] leading-[20px];
+}
+.separator0{
+ @apply w-[1px] h-[56px] bg-[#0000001F];   
+}
+.separator1{
+ @apply w-[1px] h-[56px] bg-[#0000001F] hidden sm:block;   
+}
+.intro__image{
+    @apply relative sm:mt-[40px] lg:mt-[0];
+    img{
+        @apply sm:max-w-[450px]
+        
+    }
+}
+.star-small{
+@apply absolute top-[40%] left-0 animate-spin-slow;
+}
+.star-big{
+@apply absolute top-0 right-[10%] animate-spin-slow;
+}
+
+  
