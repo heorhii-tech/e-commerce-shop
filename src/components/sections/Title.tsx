@@ -9,7 +9,7 @@ const Title = ({
     extraClass
 }: TitleProps) => {
     return (
-        <div className={cn("text-[46px] font-bold", extraClass)}>
+        <div className={cn("text-[32px] font-black", extraClass)}>
             {text}
         </div>
     )

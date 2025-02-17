@@ -1,3 +1,6 @@
+.header{
+    @apply fixed w-full bg-white opacity-90 z-50;
+}
 .header-wrapper{
     @apply flex justify-between items-center px-4 py-2;
 
@@ -18,5 +21,4 @@
 .header-nav__link{
     @apply text-zinc-500 hover:text-zinc-800 transition-colors duration-300 font-bold tracking-wide;
 }
-
 

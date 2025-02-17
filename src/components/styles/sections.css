@@ -1,6 +1,6 @@
 .intro{
     @apply w-full min-h-screen bg-[#F2F0F1];
-    @apply flex lg:min-h-[100%] ;
+    @apply flex lg:min-h-[100%] pt-[50px] lg:pt-[20px] ;
 }
 .intro-wrapper{
     @apply mt-[40px] flex flex-col items-center gap-[20px];
@@ -57,4 +57,145 @@
 @apply absolute top-0 right-[10%] animate-spin-slow;
 }
 
-  
+
+.new-arrivals-wrapper{
+    @apply mt-[50px] flex flex-col items-center gap-[20px];
+    @apply lg:mt-[100px] xl:mt-[150px];
+}
+
+.product-card{
+ @apply mt-[16px] ;   
+}
+.product-card__title{
+@apply text-[16px] font-bold;
+}
+.product-card__price-current{
+    @apply text-[20px] font-bold;
+}
+.product-card__content{
+    @apply mt-[10px]
+}
+.new-arrivals__products{
+    @apply flex flex-wrap items-center justify-center gap-[5px];
+    @apply sm:justify-between xl:justify-between xl:w-full;
+}
+.product-card__header{
+    @apply w-[290px] bg-[#F2F0F1]  md:w-[330px] lg:w-[320px]  rounded-[16px] lg:hover:shadow-xl ;
+    @apply cursor-pointer transition-all duration-300 ease-in-out;
+}
+.product-card__image{
+    @apply sm:max-h-[292px] md:max-h-[330px] lg:max-h-[324px] rounded-[16px];
+}
+
+.product-card__price{
+    @apply flex items-center gap-[10px];
+}
+.product-card__price-old{
+    @apply text-[20px] font-bold opacity-50 relative;
+}
+.product-card__price-old span{
+    @apply bg-black w-full h-[2px] absolute top-1/2 left-0 z-[5];
+}
+.product-card__price-discount{
+    @apply text-[14px]  text-red-500 bg-red-200 px-2 py-[2px]  rounded-[16px];
+}
+.product-card__footer{
+    @apply flex items-center justify-between;
+}
+.product-card__action{
+    @apply cursor-pointer mr-[8px] text-[36px] font-bold text-zinc-500 hover:text-zinc-800 transition-colors duration-300;
+}
+
+.dress-style{
+    @apply mt-[50px]
+}
+.dress-style__wrapper{
+    @apply bg-[#F2F0F1] rounded-[16px] py-[70px];
+}
+.dress-style__title{
+    @apply max-w-[246px] mx-auto text-center lg:max-w-none;
+}
+.dress-style__cards{
+    @apply flex flex-wrap items-center justify-center gap-[16px] mt-[40px] ;
+    @apply sm:px-[40px] lg:grid lg:grid-cols-3 lg:gap-[40px]
+}
+.dress-style__card{
+    @apply w-[310px] h-[190px] sm:w-full sm:h-[220px] lg:h-[300px] px-[24px] py-[16px] bg-cover bg-center bg-no-repeat rounded-[16px];
+    @apply lg:hover:shadow-xl lg:hover:cursor-pointer transition-all duration-300 ease-in-out;
+}
+.dress-style__card-title{
+    @apply text-[18px] font-semibold md:text-[24px];
+}
+.card1,.card2{
+  @apply lg:col-span-2;
+}
+
+
+
+.cart{
+    @apply pt-[80px];
+}
+.cart-wrapper{
+    @apply flex flex-col sm:flex-row  ;
+    @apply gap-[20px] items-start lg:justify-between sm:my-[20px]  pb-[50px];
+}
+.cart__products{
+    @apply mt-[20px] w-full flex flex-col border-[#F2F0F1] rounded-[16px] border-[1px] gap-[20px];
+    @apply p-[10px] sm:w-[60%] sm:mt-[0] lg:w-[50%]
+}
+.cart-product{
+    @apply flex items-center justify-between gap-[20px];
+}
+
+.cart-product__header{
+    @apply flex items-center justify-between;
+}
+.cart-product__title{
+    @apply text-[14px] font-bold md:text-[16px];
+}
+.cart-product__image{
+    @apply max-w-[100px] rounded-[12px];
+    img{
+        @apply rounded-[12px];
+    }
+}
+.cart-product__details{
+    @apply flex justify-between items-center;
+}
+.cart-product__info{
+    @apply h-full flex flex-col justify-between h-[100px] w-full;
+}
+.cart-product__controls{
+    @apply flex items-center bg-[#F2F0F1] py-[5px] px-[20px] rounded-[16px] gap-[20px];
+}
+.cart-product__price{
+    @apply text-[20px] font-bold ;
+}
+.cart-summary{
+    @apply w-full border-[#F2F0F1] rounded-[16px] border-[1px] p-[10px];
+    @apply sm:w-[40%] lg:w-[30%]
+}
+.cart-summary__content{
+    @apply mt-[20px];
+}
+.cart-summary__row{
+    @apply flex items-center justify-between;
+}
+.cart-summary__text{
+    @apply text-[16px] text-[#000000] opacity-[60%] tracking-wide;
+}
+.cart-summary__price{
+    @apply text-[16px] font-bold;
+}
+.cart-summary__button{
+    @apply w-full mt-[20px];
+}
+.cart-summary__title{
+    @apply text-[20px] font-bold;
+}
+.cart-product__remove{
+    @apply lg:hover:cursor-pointer lg:hover:shadow-xl lg:hover:scale-105 transition-all duration-300 ease-in-out;
+}
+.cart-product__btn{
+    @apply text-[20px] font-bold text-blue-500;
+}

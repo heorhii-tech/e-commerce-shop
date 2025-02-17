@@ -1,21 +1,21 @@
 "use client";
-import Title from "../sections/Title";
-import ProductCard from "../sections/ProductCard";
+import Title from "./Title";
+import ProductCard from "./ProductCard";
 import { NewArrivalsConfig } from "@/share/common/types";
 import { useLayout } from "@/components/hooks/useLaout";
 import { CarouselProduct } from "./Сarousel";
 
-export const NewArrivals = ({ config }: { config: NewArrivalsConfig }) => {
+export const ProductSection = ({ config }: { config: NewArrivalsConfig }) => {
   const { mediaQueryConfig } = useLayout();
   const { isSm } = mediaQueryConfig;
   return (
     <section className="new-arrivals">
-      <div className="container">
-        <Title text={config.title} />
+      <div className="container new-arrivals-wrapper">
+        <Title text={config.title} extraClass="new-arrivals__title" />
         {isSm ? (
           <CarouselProduct config={config.productsInfo} />
         ) : (
-          <div>
+          <div className="new-arrivals__products">
             {config.productsInfo.map((product, index) => (
               <ProductCard key={index} config={product} />
             ))}
