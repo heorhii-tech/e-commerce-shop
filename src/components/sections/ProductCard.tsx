@@ -54,12 +54,14 @@ const ProductCard = ({ config }: Props) => {
           <button onClick={handleAddToCart} className="product-card__action">+</button>
 
           {/* Диалоговое окно */}
+      
           <ConfirmationDialog
             isOpen={isDialogOpen}
             onClose={() => setIsDialogOpen(false)}
             onConfirm={() => setIsDialogOpen(false)}
             config={config}
           />
+          
         </div>
       </div>
     </div>

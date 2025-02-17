@@ -84,7 +84,7 @@
     @apply cursor-pointer transition-all duration-300 ease-in-out;
 }
 .product-card__image{
-    @apply sm:max-h-[292px] md:max-h-[330px] lg:max-h-[324px] rounded-[16px];
+    @apply max-h-[292px] md:max-h-[330px] lg:max-h-[324px] rounded-[16px];
 }
 
 .product-card__price{
