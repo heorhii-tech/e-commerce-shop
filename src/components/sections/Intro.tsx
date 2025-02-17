@@ -2,6 +2,7 @@ import React from "react";
 import { IntroConfig } from "@/share/common/types";
 import { Button } from "../ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 interface Props {
   config: IntroConfig;
@@ -15,9 +16,11 @@ export const Intro = ({ config }: Props) => {
           <div className="intro__info">
             <h1 className="intro__title">{config.title}</h1>
             <p className="intro__subtitle">{config.subtitle}</p>
-            <Button className="intro__button rounded-[64px] h-[56px]">
-              {config.buttonTitle}
-            </Button>
+            <Link href={"#shop"}>
+              <Button className="intro__button rounded-[64px] h-[56px]">
+                {config.buttonTitle}
+              </Button>
+            </Link>
           </div>
           <div className="intro__stats">
             {config.statistic.map((item, index) => (
@@ -33,8 +36,20 @@ export const Intro = ({ config }: Props) => {
           </div>
         </div>
         <div className="intro__image">
-           <Image className="star-small" src="./icons/star-small.svg" alt="Star" width={30} height={30} />
-           <Image className="star-big" src="./icons/star-big.svg" alt="Star" width={50} height={50} />
+          <Image
+            className="star-small"
+            src="./icons/star-small.svg"
+            alt="Star"
+            width={30}
+            height={30}
+          />
+          <Image
+            className="star-big"
+            src="./icons/star-big.svg"
+            alt="Star"
+            width={50}
+            height={50}
+          />
           <Image src={config.image} alt="Intro Image" />
         </div>
       </div>

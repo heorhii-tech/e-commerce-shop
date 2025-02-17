@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const EmptyCart = () => {
   return (
-    <div className="flex flex-col items-center justify-center p-8 text-center space-y-6">
+    <div className="flex flex-col items-center justify-center p-8 text-center space-y-6 mx-auto">
       <div className="relative">
         <div className="absolute -inset-1 rounded-full bg-blue-100 blur-sm"></div>
         <div className="relative bg-white rounded-full p-4">

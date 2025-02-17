@@ -33,7 +33,9 @@ const Cart = ({ config }: { config: CartConfig }) => {
 
   return (
     <section className="cart">
-       <Title text={title} extraClass="cart__title container" />
+       {cart.length > 0 ? (
+        <Title text={title} extraClass="cart__title container" />
+       ) : null}
       <div className="container cart-wrapper">
        
         {cart.length > 0 ? (
