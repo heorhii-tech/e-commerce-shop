@@ -16,7 +16,7 @@ export const Intro = ({ config }: Props) => {
           <div className="intro__info">
             <h1 className="intro__title">{config.title}</h1>
             <p className="intro__subtitle">{config.subtitle}</p>
-            <Link href={"#shop"}>
+            <Link className="w-full" href={"#shop"}>
               <Button className="intro__button rounded-[64px] h-[56px]">
                 {config.buttonTitle}
               </Button>
