@@ -13,5 +13,3 @@ export const Reviews = ({ config }: { config: ReviewsConfig }) => {
     </section>
   );
 };
-
-

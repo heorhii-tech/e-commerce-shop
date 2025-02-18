@@ -11,7 +11,11 @@ export const DressStyle = ({ config }: { config: DressStyleConfig }) => {
           <Title text={title} extraClass="dress-style__title" />
           <div className="dress-style__cards">
             {cardsInfo.map((card, index) => (
-              <DressStyleCard key={index} config={card} extraClass={`${index}`} />
+              <DressStyleCard
+                key={index}
+                config={card}
+                extraClass={`${index}`}
+              />
             ))}
           </div>
         </div>

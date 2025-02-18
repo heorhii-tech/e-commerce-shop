@@ -33,11 +33,10 @@ const Cart = ({ config }: { config: CartConfig }) => {
 
   return (
     <section className="cart">
-       {cart.length > 0 ? (
+      {cart.length > 0 ? (
         <Title text={title} extraClass="cart__title container" />
-       ) : null}
+      ) : null}
       <div className="container cart-wrapper">
-       
         {cart.length > 0 ? (
           <>
             <div className="cart__products">

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 interface StarProps {
   filled: boolean;
@@ -7,12 +7,17 @@ interface StarProps {
   onMouseLeave: () => void;
 }
 
-const Star: React.FC<StarProps> = ({ filled, onClick, onMouseEnter, onMouseLeave }) => {
+const Star: React.FC<StarProps> = ({
+  filled,
+  onClick,
+  onMouseEnter,
+  onMouseLeave,
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
-      fill={filled ? 'currentColor' : 'none'}
+      fill={filled ? "currentColor" : "none"}
       stroke="currentColor"
       strokeWidth="1"
       className="w-4 h-4 md:w-5 md:h-5 cursor-pointer text-yellow-400"

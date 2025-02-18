@@ -1,4 +1,4 @@
-import * as React from "react"
+import * as React from "react";
 
 import { Card, CardContent } from "@/components/ui/card";
 import { ProductInfo } from "@/share/common/types";
@@ -9,9 +9,9 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel"
+} from "@/components/ui/carousel";
 interface Props {
-  config: ProductInfo[]
+  config: ProductInfo[];
 }
 
 export function CarouselProduct({ config }: Props) {
@@ -33,5 +33,5 @@ export function CarouselProduct({ config }: Props) {
       <CarouselPrevious />
       <CarouselNext />
     </Carousel>
-  )
+  );
 }

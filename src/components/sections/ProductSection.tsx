@@ -9,7 +9,7 @@ export const ProductSection = ({ config }: { config: NewArrivalsConfig }) => {
   const { mediaQueryConfig } = useLayout();
   const { isSm } = mediaQueryConfig;
   return (
-    <section id='shop' className="new-arrivals">
+    <section id="shop" className="new-arrivals">
       <div className="container new-arrivals-wrapper">
         <Title text={config.title} extraClass="new-arrivals__title" />
         {isSm ? (

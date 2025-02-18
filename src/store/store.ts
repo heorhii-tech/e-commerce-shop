@@ -1,16 +1,14 @@
-"use client"
+"use client";
 import { configureStore } from "@reduxjs/toolkit";
 import cartSlice from "./slices/cartSlice";
 import type { ProductInfo } from "../share/common/types";
 
 export interface RootState {
-    cartState: {
-      cart: ProductInfo[];
-      totalPrice: number;
-    };
-  }
-
-
+  cartState: {
+    cart: ProductInfo[];
+    totalPrice: number;
+  };
+}
 
 const saveState = (state: RootState) => {
   try {
@@ -20,8 +18,6 @@ const saveState = (state: RootState) => {
     console.error("Ошибка сохранения в localStorage", error);
   }
 };
-
-
 
 const store = configureStore({
   reducer: {

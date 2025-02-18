@@ -25,8 +25,8 @@ export function ReviewsCarousel({
     >
       <CarouselContent className="-ml-2 md:-ml-4">
         {reviewsCards.map((reviewCard, index) => (
-          <CarouselItem 
-            key={index} 
+          <CarouselItem
+            key={index}
             className="pl-2 md:pl-4 basis-full sm:basis-1/2 lg:basis-1/3"
           >
             <div className="h-full">

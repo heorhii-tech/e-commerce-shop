@@ -10,7 +10,7 @@ import {
   CartProductConfig,
   CartSummaryConfig,
   ReviewsCardConfig,
-  ReviewsConfig
+  ReviewsConfig,
 } from "./types";
 import introImage from "../../../public/images/intro-image.png";
 import cartIcon from "../../../public/icons/cart-icon.svg";
@@ -26,7 +26,7 @@ import dressStyleImage1 from "../../../public/images/casual.png";
 import dressStyleImage2 from "../../../public/images/formal.png";
 import dressStyleImage3 from "../../../public/images/party.png";
 import dressStyleImage4 from "../../../public/images/gym.png";
-import deleteIcon from "../../../public/icons/delete-icon.svg"; 
+import deleteIcon from "../../../public/icons/delete-icon.svg";
 import mediaImage1 from "../../../public/icons/twitter.svg";
 import mediaImage2 from "../../../public/icons/instagram.svg";
 import mediaImage3 from "../../../public/icons/facebook.svg";
@@ -70,7 +70,6 @@ export const INTRO_CONFIG: IntroConfig = {
   statistic: INTRO_STATISTIC,
   image: introImage,
 };
-
 
 export const NEW_ARRIVALS_CONFIG: NewArrivalsConfig = {
   title: "NEW ARRIVALS",
@@ -182,59 +181,64 @@ export const DRESS_STYLE_CONFIG: DressStyleConfig = {
 };
 
 const CART_PRODUCT_CONFIG: CartProductConfig = {
-  
-  deleteIcon: deleteIcon
+  deleteIcon: deleteIcon,
 };
 const CART_SUMMARY_CONFIG: CartSummaryConfig = {
- title: "Order Summary", 
- subTotalTitle: "Subtotal",
- deleliveryTitle: "Delivery Fee",
- totalTitle: "Total",
- buttonTitle: "Checkout"
+  title: "Order Summary",
+  subTotalTitle: "Subtotal",
+  deleliveryTitle: "Delivery Fee",
+  totalTitle: "Total",
+  buttonTitle: "Checkout",
 };
 export const CART_CONFIG: CartConfig = {
   title: "YOUR CART",
   product: CART_PRODUCT_CONFIG,
-  summary: CART_SUMMARY_CONFIG
-}
+  summary: CART_SUMMARY_CONFIG,
+};
 
 const REVIEWS_CARD_CONFIG: ReviewsCardConfig[] = [
   {
     stars: 5,
     customerName: "Sarah M.",
-    review: "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+    review:
+      "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.",
   },
   {
     stars: 5,
     customerName: "Alex K.",
-    review: "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions."
+    review:
+      "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.",
   },
   {
     stars: 4,
     customerName: "Emily R.",
-    review: "Shop.co has become my go-to for trendy and affordable fashion. The delivery was fast, and the clothes fit perfectly. I only wish they had more sustainable options!"
+    review:
+      "Shop.co has become my go-to for trendy and affordable fashion. The delivery was fast, and the clothes fit perfectly. I only wish they had more sustainable options!",
   },
   {
     stars: 5,
     customerName: "James T.",
-    review: "The customer service at Shop.co is outstanding. They helped me with sizing issues and even recommended pieces that matched my style. Highly recommend!"
+    review:
+      "The customer service at Shop.co is outstanding. They helped me with sizing issues and even recommended pieces that matched my style. Highly recommend!",
   },
   {
     stars: 5,
     customerName: "Laura B.",
-    review: "I love how unique and stylish the collections are at Shop.co. Every time I shop, I find something new and exciting. It's like a treasure hunt for fashion lovers!"
+    review:
+      "I love how unique and stylish the collections are at Shop.co. Every time I shop, I find something new and exciting. It's like a treasure hunt for fashion lovers!",
   },
   {
     stars: 4,
     customerName: "Michael P.",
-    review: "Great experience overall! The quality of the materials is impressive, and the prices are reasonable. My only suggestion would be to expand the men's collection."
-  }
+    review:
+      "Great experience overall! The quality of the materials is impressive, and the prices are reasonable. My only suggestion would be to expand the men's collection.",
+  },
 ];
 
 export const REVIEWS_CONFIG: ReviewsConfig = {
   title: "OUR HAPPY CUSTOMERS",
-  reviewsCards: REVIEWS_CARD_CONFIG
-}
+  reviewsCards: REVIEWS_CARD_CONFIG,
+};
 const FOOTER_LINKS = [
   {
     title: "Company",
@@ -242,23 +246,39 @@ const FOOTER_LINKS = [
   },
   {
     title: "Help",
-    links: ["Customer Support", "Delivery Details", "Terms & Conditions", "Privacy Policy"],
+    links: [
+      "Customer Support",
+      "Delivery Details",
+      "Terms & Conditions",
+      "Privacy Policy",
+    ],
   },
   {
     title: "Resources",
-    links: ["Free eBooks", "Development Tutorial", "How to Blog", "YouTube Playlist"],
+    links: [
+      "Free eBooks",
+      "Development Tutorial",
+      "How to Blog",
+      "YouTube Playlist",
+    ],
   },
   {
     title: "Social",
-    links: ["Manager Deliveries", "Youtube Playlist", "Development Tutorial", "Facebook"],
+    links: [
+      "Manager Deliveries",
+      "Youtube Playlist",
+      "Development Tutorial",
+      "Facebook",
+    ],
   },
 ];
-const FOOTER_CONTENT_CONFIG  = {
-  subtitle: "We have clothes that suits your style and which you’re proud to wear. From women to men.",
+const FOOTER_CONTENT_CONFIG = {
+  subtitle:
+    "We have clothes that suits your style and which you’re proud to wear. From women to men.",
   copyright: "© 2024 Shop.co. All rights reserved.",
-  mediaImages: [mediaImage1, mediaImage2, mediaImage3, mediaImage4]
-}
-export const FOOTER_CONFIG  = {
+  mediaImages: [mediaImage1, mediaImage2, mediaImage3, mediaImage4],
+};
+export const FOOTER_CONFIG = {
   linksConfig: FOOTER_LINKS,
-  contentConfig: FOOTER_CONTENT_CONFIG
-}
+  contentConfig: FOOTER_CONTENT_CONFIG,
+};

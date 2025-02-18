@@ -13,7 +13,7 @@ export const Footer = ({ config }: FooterProps) => {
 
   return (
     <footer className="footer container">
-      <Separator style={{marginBottom:"20px"}} />
+      <Separator style={{ marginBottom: "20px" }} />
       <div className="footer__wrapper container">
         <div className="footer__content">
           <Logo />

@@ -12,9 +12,11 @@ export const Header = ({ config }: { config: HeaderConfig }) => {
   const { mediaQueryConfig } = useLayout();
   const { navigation, cart } = config;
   const { isLg } = mediaQueryConfig;
-  
-  const { cart: cartState } = useSelector((state: RootState) => state.cartState);
-  
+
+  const { cart: cartState } = useSelector(
+    (state: RootState) => state.cartState,
+  );
+
   return (
     <header className="header">
       <div className="container mx-auto">
@@ -22,10 +24,7 @@ export const Header = ({ config }: { config: HeaderConfig }) => {
           <Logo />
 
           <div className="header-nav__wrapper">
-            <Link
-              href={cart.href}
-              className="ml-auto mr-5 relative group"
-            >
+            <Link href={cart.href} className="ml-auto mr-5 relative group">
               <div className="p-2 transition-transform duration-300 ">
                 <ShoppingBag className="w-6 h-6 text-zinc-500 group-hover:text-zinc-800" />
                 {cartState.length > 0 && (
@@ -35,7 +34,7 @@ export const Header = ({ config }: { config: HeaderConfig }) => {
                 )}
               </div>
             </Link>
-            
+
             {isLg ? (
               <BurgerMenu navigation={navigation} />
             ) : (

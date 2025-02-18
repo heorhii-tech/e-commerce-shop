@@ -1,6 +1,6 @@
 "use client";
-import React, { useState } from 'react';
-import Star from './Star';
+import React, { useState } from "react";
+import Star from "./Star";
 
 interface StarRatingProps {
   maxStars?: number;
