@@ -63,3 +63,25 @@ export interface CartConfig {
   product: CartProductConfig;
   summary: CartSummaryConfig;
 }
+export interface ReviewsCardConfig {
+  stars: number;
+  customerName: string;
+  review: string;
+}
+export interface ReviewsConfig {
+  title: string;
+  reviewsCards: ReviewsCardConfig[];
+}
+export interface FooterContentConfig {
+  subtitle: string;
+  copyright: string;
+  mediaImages: StaticImageData[];
+}
+export interface FooterLinkConfig {
+  title: string;
+  links: string[];
+}
+export interface FooterConfig {
+  linksConfig: FooterLinkConfig[];
+  contentConfig: FooterContentConfig;
+}
